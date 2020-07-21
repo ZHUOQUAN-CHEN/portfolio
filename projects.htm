@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<title>projects</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+	font-family: quicksand;
+}
+
+.header h1 {
+	text-align: center;
+	letter-spacing: 1px;
+	font-family: Allema;
+	font-size: 45px;
+	color: black;
+}
+
+.header p {
+	margin: -10px 0 30px 0;
+	text-align: center;
+	letter-spacing: 7px;
+	color: #737373;
+	font-size: 11px
+}
+
+.content h5 {
+	margin: 30px 0px 10px 300px;
+	letter-spacing: 1px;
+}
+
+.content h2 {
+	margin: 15px 0px -5px 300px;
+	color: black;
+	font-size: 18px;
+}
+
+.content h4 {
+	margin: 15px 0px 5px 300px;
+	color: black;
+	font-size: 13px;
+	width: 50%;
+	line-height: 2;
+}
+
+.content p {
+	margin: 0px 0px 0px 300px;
+	color: #737373;
+	font-size: 13px;
+	line-height: 2;
+	width: 50%;
+}
+
+.navbar {
+	margin:0 auto;
+	width: 40%;
+	border: 1px solid #e7e7e7;
+	overflow: auto;
+}
+
+.navbar a {
+	float: left;
+	padding: 10px 0 10px 0;
+	color: #737373;
+	text-decoration: none;
+	font-size: 13px;
+	width: 25%; /* Four links of equal widths */
+	text-align: center;
+	letter-spacing: 0.5px;
+}
+
+.navbar a:hover {background-color: #EEEEEE}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+</style>
+
+<body>
+	<div class="projects">
+		<div class="header">
+			<h1>Projects</h1>
+			<p>I've been working hard.</p>
+		</div>
+
+		<hr style="width:50%; color:#737373; FILTER:alpha(opacity=100,finishopacity=0,style=3)" SIZE=3>
+
+		<div class="content">
+			<h5>Jan 10, 2020</h5>
+			<h2>AlexNet VS. ResNet18</h2>
+			<h4>To compare the performance of AlexNet and ResNet18 models in fine tuning.
+				Dataset: hymenoptera_data<br>
+				Epoch: 15</h4>
+			<p>1> Phase 1: The outcome of resetting final fully connected layers.<br>
+     		   AlexNet model: training complete in 15m 49s, the best accuracy is 0.888889.<br>
+               ResNet model: training complete in 20m 60s, the best accuracy is 0.947712.<br>
+               2> Phase 2: The outcome of freezing all the network except the final layers.<br>
+               AlexNet model: training complete in 10m 56s, the best accuracy is 0.947712.<br>
+               ResNet model: training complete in 9m 5s, the best accuracy is 0.954248.<br>
+               3> Performance:<br>
+               AlexNet model: 26m 45s,  0.947712, ResNet model: 30m 5s,  0.954248.</p>
+
+			<h5>Nov 5, 2019</h5>
+			<h2>IMAGES CLASSIFICATION MODEL</h2>
+			<h4>To develop a multi-layer neural network with fully-connected layers to perform classification on dataset.</h4>
+			<p>1> Computing the loss and gradients using back-propagation and gradient descent. <br>2> Training the neural network using SGD as an optimization. <br>3> Use the trained weights to predict labels for data points.</p>
+
+			<h5>Oct 22, 2018</h5>
+			<h2>ARTIST</h2>
+			<h4>Using data structure and visualized data to create a new image with words.</h4>
+			<p>1> Using HashMap to calculate the words frequency. <br>2> Filling those words based on the frequency in a specified shape. <br>3> Set up color, font size and density follow your own idea.
+			</p>
+		</div>
+
+		<div class="navbar" style="margin-top: 60px">
+			<a href="main.htm">Home</a>
+			<a href="about.htm">About</a>
+			<a href="activity.htm">Activity</a>
+			<a href="projects.htm">Projects</a>
+		</div>
+	</div>
+
+</body>
+</html>
