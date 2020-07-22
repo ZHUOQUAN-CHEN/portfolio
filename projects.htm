@@ -11,44 +11,45 @@ body {
 
 .header h1 {
 	text-align: center;
-	letter-spacing: 1px;
-	font-family: Allema;
-	font-size: 45px;
+	font-family: quicksand;
+	font-size: 25px;
+	letter-spacing: 25px;
 	color: black;
+	padding: 20px 0px 10px 0px;
 }
-
+/*
 .header p {
 	margin: -10px 0 30px 0;
 	text-align: center;
 	letter-spacing: 7px;
 	color: #737373;
 	font-size: 11px
-}
+}*/
 
 .content h5 {
-	margin: 30px 0px 10px 300px;
+	margin: 30px 0px 10px 305px;
 	letter-spacing: 1px;
 }
 
 .content h2 {
-	margin: 40px 0px -5px 300px;
+	margin: 25px 0px -5px 305px;
 	color: black;
-	font-size: 18px;
+	font-size: 17px;
 }
 
 .content h4 {
-	margin: 15px 0px 5px 300px;
+	margin: 10px 0px 5px 305px;
 	color: black;
 	font-size: 13px;
 	width: 50%;
-	line-height: 2;
+	line-height: 1.7;
 }
 
 .content p {
-	margin: 0px 0px 0px 300px;
+	margin: 0px 0px 0px 305px;
 	color: #737373;
 	font-size: 13px;
-	line-height: 2;
+	line-height: 1.7;
 	width: 50%;
 }
 
@@ -70,7 +71,7 @@ body {
 	letter-spacing: 0.5px;
 }
 
-.navbar a:hover {background-color: #EEEEEE}
+.navbar a:hover {color: #213778}
 
 @media screen and (max-width: 400px) {
   .navbar a {
@@ -84,15 +85,14 @@ body {
 <body>
 	<div class="projects">
 		<div class="header">
-			<h1>Projects</h1>
-			<p>I've been working hard.</p>
+			<h1>PROJECTS</h1>
 		</div>
 
 		<hr style="width:50%; color:#737373; FILTER:alpha(opacity=100,finishopacity=0,style=3)" SIZE=3>
 
 		<div class="content">
 			<h2>AlexNet VS. ResNet18</h2>
-			<h4>To compare the performance of AlexNet and ResNet18 models in fine tuning.
+			<h4>To compare the performance of AlexNet and ResNet18 models in fine tuning.<br>
 				Dataset: hymenoptera_data<br>
 				Epoch: 15</h4>
 			<p>1> Phase 1: The outcome of resetting final fully connected layers.<br>
@@ -105,7 +105,7 @@ body {
                AlexNet model: 26m 45s,  0.947712, ResNet model: 30m 5s,  0.954248.</p>
 
 			<h2>IMAGES CLASSIFICATION MODEL</h2>
-			<h4>To develop a multi-layer neural network with fully-connected layers to perform classification on dataset.</h4>
+			<h4>To develop a multi-layer neural network with fully-connected layers to perform classification.</h4>
 			<p>1> Computing the loss and gradients using back-propagation and gradient descent. <br>2> Training the neural network using SGD as an optimization. <br>3> Use the trained weights to predict labels for data points.</p>
 
 			<h2>ARTIST</h2>
@@ -114,7 +114,7 @@ body {
 			</p>
 		</div>
 
-		<div class="navbar" style="margin-top: 60px">
+		<div class="navbar" style="margin-top: 40px">
 			<a href="index.htm">HOME</a>
 			<a href="about.htm">ABOUT</a>
 			<a href="activity.htm">ACTIVITY</a>
