@@ -2,8 +2,7 @@
 <html>
 <title>projects</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, 
-minimum-scale=1.0, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <style>
 
 body {
@@ -11,29 +10,47 @@ body {
 	margin:0;
 }
 
-.column-left {float:left; width:20.5%; padding: 0.5%}
-
-.column-mid {float:left; width:58%}
-
-.column-mid h4 {
-	line-height: 1.8;
-	margin-top: -0.5em;
+* {
+  box-sizing: border-box;
 }
 
-.column-mid p {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
-	color: #737373;
-	font-size: 0.9em;
-	/*text-align: justify;*/
-	line-height: 1.8;
-	margin-top: -1em;
-	margin-bottom: 3em;
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 0px;
 }
 
-.column-right {float:right; width:20.5%; padding: 0.5%}
+/* Left and right column */
+.column.side {
+  width: 15%;
+  background-color: white;
+}
+
+/* Middle column */
+.column.middle {
+  width: 70%;
+}
+
+.img-container {
+  float: left;
+  width: 50%;
+  padding: 2%;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.img-container:hover img{filter:alpha(Opacity=80);-moz-opacity:0.8;opacity: 0.8}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 .navbar {
 	list-style-type: none;
@@ -53,18 +70,21 @@ body {
 	padding: 1.1em 0 1.1em 0;
 	color: white;
 	text-decoration: none;
-	font-size: 0.8em;
+	font-size: 0.75em;
 	text-align: center;
 	/* width: 9%; /* Four links of equal widths */
 }
 
-.navbar a:hover:not(.active){color: rgb(255,255,255,0.4)}
+.navbar a:hover:not(.active){color: rgba(255,255,255,0.4)}
 
 .active {
-	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.7);
 }
 
 @media screen and (max-device-width: 25em) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
   .navbar a {
     float: none;
     width: auto;
@@ -86,47 +106,43 @@ body {
 	  </div>
 	</nav>
 
-	<div class="projects">
-		<div class="column-left"></div>
-		<div class="column-mid">
-			<h2>ALEXNET vs. RESNET18</h2>
-			<h4>To compare the performance of AlexNet and ResNet18 models in fine tuning.<br>
-				Dataset: hymenoptera_data, Epoch: 15</h4>
-			<p>1> Phase 1: The outcome of resetting final fully connected layers.<br>
-     		   AlexNet model: training completed in 15m 49s, the best accuracy is 0.888889.<br>
-               ResNet model: training completed in 20m 60s, the best accuracy is 0.947712.<br>
-               2> Phase 2: The outcome of freezing all the network except the final layers.<br>
-               AlexNet model: training completed in 10m 56s, the best accuracy is 0.947712.<br>
-               ResNet model: training completed in 9m 5s, the best accuracy is 0.954248.<br>
-               3> Performance: AlexNet model, 26m 45s, 0.947712. ResNet model, 30m 5s, 0.954248.</p>
+	<div class="row">
+  		<div class="column side">
+  			<h2 style="color: white">Side</h2>
+  		</div>
 
-			<h2>IMAGES CLASSIFICATION MODEL</h2>
-			<h4>To develop a multi-layer neural network with fully-connected layers to perform classification.</h4>
-			<p>1> Computing the loss and gradients using back-propagation and gradient descent. <br>2> Training the neural network using SGD as an optimization. <br>3> Use the trained weights to predict labels for data points.</p>
+  		<div class="column middle">
+  			<div class="img-container">
+  				<p style="font-size: 0.8em">BANK SHARES ANALYSIS</p>
+  				<a href="analysis.htm" target="_blank">
+				<img src="share.jpg" alt="in" style="width:100%"></a>
+  			</div>
+  			<div class="img-container">
+  				<p style="font-size: 0.8em">ALEXNET vs. RESNET18</p>
+  				<a target="_blank" href="cnn.htm">
+  				<img src="conet_1.png" style="width:100%"></a>
+  			</div>
+  			<div class="img-container">
+  				<p style="font-size: 0.8em">IMAGES CLASSIFICATION MODEL</p>
+  				<a target="_blank" href="nn.htm">
+  				<img src="nn.jpg" style="width:100%"></a>
+  			</div>
+  			<div class="img-container">
+  				<p style="font-size: 0.8em">ARTIST</p>
+  				<a target="_blank" href="artist.htm">
+  				<img src="artist.jpg" style="width:100%"></a>
+  			</div>
+  			<div class="img-container">
+  				<p style="font-size: 0.8em">ROOMBA</p>
+  				<a target="_blank" href="roomba.htm">
+  				<img src="roomba.jpg" style="width:100%"></a>
+  			</div>
+  		</div>
 
-			<h2>BANK SHARES ANALYSIS</h2>
-			<h4>Data exploratory and visualization. The analyzed data from yahoo finance, which respectively are Bank of America, CitiGroup, Goldman Sachs, JPMorgan Chase, Morgan Stanley and Wells Fargo from Jan 1st 2006 to Jan 1st 2016.</h4>
-			<p>1> Analysis:<br>
-			   Discovery 1: 4 bank shares had the worst on Jan 20th 2009, which was the day of Obama's inauguration.<br>
-			   Discovery 2: Using Standard Deviation found that the Morgan Stanley was the riskiest stock of those bank shares in 2015.<br>
-			   2> Data Visualization:<br>
-			   Create a distplot chart to show year returns for each stock.<br>
-			   Create a line plot showing the close price for each bank for the entire index of time.<br>
-			   Create a line plot to analyze the moving averages for these stocks in a curtain year.</p>
-
-			<h2>ARTIST</h2>
-			<h4>Using data structure and visualized data to create a new image with words.</h4>
-			<p>1> Using HashMap to calculate the words frequency. <br>2> Filling those words based on the frequency in a specified shape. <br>3> Set up color, font size and density follow your own idea.
-			</p>
-
-			<h2>ROOMBA</h2>
-			<h4>A robot project that to complete some tasks in simulation & real-world environment.</h4>
-			<p>1> Laser detection: Objects distance.<br>
-			   2> Computer vision: Tracing by color.<br>
-			   3> Localization: Update real-time coordinate information in locomotion.<br>
-			   4> Mapping and Planning: Find a best way and avoid obstacles to destination.</p>
-		</div>
-	</div>
+  		<div class="column side">
+  			<h2 style="color: white">Side</h2>
+  		</div>
+  	</div>	
 
 </body>
 </html>
