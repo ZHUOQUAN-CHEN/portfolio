@@ -1,84 +1,66 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>ZHUOQUAN CHEN</title>
+<title>activity</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="icon" type="text/css" href="favicon.ico">
-</head>
-
 <style>
 
 #background{
-	position:fixed;
-	width:100%;
-	height:100%;
-	z-index:-10;
-	zoom: 1;
-	background-repeat: no-repeat;
-	background-size: cover;
-	-webkit-background-size: cover;
-	-o-background-size: cover;
-	background-position: center 0;
+  position:fixed;
+  width:100%;
+  height:100%;
+  z-index:-10;
+  zoom: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-position: center 0;
 }
 
 body {
-	background:#000;
-	font: normal 100% quicksand,sans-serif;
-	margin-top: 1em;
+  background:#000;
+  font: normal 100% quicksand,sans-serif;
+  margin:0;
 }
 
-/*
-.header h1 {
-	padding: 0.5em 0em 0.1em 0em;
-	font-size: 5.5em;
-	color: black;
-}*/
-/*
-.navbar {
-	margin:21em auto auto 4em;
-	text-align:left;
-	list-style: none;
-	/*border: 1px solid white;
-	background-color: rgba(0,0,0,0.4);
-	overflow: auto;
+.column-left {float:left; width:16%; padding: 0.5%}
+
+.column-mid {float:center; width:68%; margin:4em auto auto auto}
+
+.column-mid p {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  color: black;
+  font-size: 0.9em;
+  line-height: 1.8;
 }
 
-.navbar a {
-	float: left;
-	display: block;
-	width: 10em;
-	color: white;
-	text-decoration: none;
-	font-size: 0.8em;
-	margin-top: 1em;
-	margin-left: 0.8em;
-
-}
-
-.navbar a:hover {color: rgba(255,255,255,0.4)}*/
+.column-right {float:right; width:16%; padding: 0.5%}
 
 .navbar {
-	list-style-type: none;
+  list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-	/*width: 100%;*/
-	/*border: 1px solid white;*/
-	/*background-color: rgba(0,0,0,0)*/
-	/*background-color: rgb(26,27,29);*/
+  /*width: 100%;*/
+  /*border: 1px solid white;*/
+  /*background-color: rgba(0,0,0,0)*/
+  /*background-color: rgb(26,27,29);*/
 }
 
 .navbar a {
-	float: left;
-	display: block;
-	width: 9em;
-	padding: 1em 1em 1.5em 0;
-	color: white;
-	text-decoration: none;
-	font-size: 0.75em;
-	text-align: center;
-	/* width: 9%; /* Four links of equal widths */
+  float: left;
+  display: block;
+  width: 9em;
+  padding: 2em 1em 1.5em 0;
+  color: white;
+  text-decoration: none;
+  font-size: 0.75em;
+  text-align: center;
+  /* width: 9%; /* Four links of equal widths */
 }
 
 .navbar a:hover {color: rgba(255,255,255,0.4)}
@@ -93,22 +75,25 @@ body {
 </style>
 
 <body>
-	<nav class="navbar-inverse">
-	  <div class="container-fluid">
-	      <ul class="navbar">
-	        <li><a class="active" href="index.htm">HOME</a></li>
-			<li><a href="about.htm">ABOUT</a></li>
-			<li><a href="activity.htm">ACTIVITY</a></li>
-			<li><a href="projects.htm">PROJECT</a></li>
-	      </ul>
-	    </div>
-	  </div>
-	</nav>
-	<div class="index">
-		<div class="image">
-			<img id="background" src="agifcolossalsphere.gif" style="width: 50%; height:auto; display:block; margin:7em auto auto 20em">
-		</div>
-	</div>
+  <nav class="navbar-inverse">
+    <div class="container-fluid">
+        <ul class="navbar">
+          <li><a class="active" href="index.htm">HOME</a></li>
+      <li><a href="about.htm">ABOUT</a></li>
+      <li><a href="activity.htm">ACTIVITY</a></li>
+      <li><a href="projects.htm">PROJECT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="index">
+    <div class="column-left"></div>
+    <div class="column-mid">
+      <img id="background" src="images/agifcolossalsphere.gif" style="width:65%; height:auto">
+    </div>
+    <div class="column-right"></div>
+  </div>
 
 </body>
 </html>
