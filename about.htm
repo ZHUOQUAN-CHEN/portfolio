@@ -4,43 +4,45 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <style>
-/*
-body {
-	background: url("BKC_02.jpg") no-repeat;
-	background-size: 40%;
-	background-position: 345px 435px;
-} */
 
 body {
 	font: normal 100% quicksand,sans-serif;
 	margin:0;
 }
 
-/* About me css */
-.content h3{
-	text-align: center;
-	margin: 3em 0 -0.1em 0;
-	color: black;
-	font-size: 1.1em;
-}
+.column-left {float:left; width:19%; padding: 0.5%}
 
-.content h5{
-	text-align: left;
-	margin: 1.5em 0 -0.5em 14.5em;
-	color: black;
-	font-size: 1.1em;
-}
+.column-mid {float:left; width:61%}
 
-.content p {
+.column-mid p {
+	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 0.8em;
-	/*text-align: justify;*/
-	width: 61%;
+	margin-bottom: 1em;
+	width: 100%;
 	color: black;
 	font-size: 0.9em;
+	/*text-align: justify;*/
 	line-height: 1.8;
 }
+
+/* About me css */
+.column-mid h5{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	color: black;
+	font-size: 1.3em;
+	margin: 1.5em 0 -0.3em 0;
+}
+
+.column-right {float:right; width:19%; padding: 0.5%}
+
+.footer {
+  background-color: white;
+  padding: 36em;
+ }
 
 .navbar {
 	list-style-type: none;
@@ -94,9 +96,11 @@ body {
 	</nav>
 
 	<div class="about">
-		<div class="content">
-			<img src="images/BKC_02.jpg" style="width: 62%; height:auto; display:block; margin:1.3em auto 1em auto">
+		<div class="column-left"></div>
+		<div class="column-mid">
+			<img src="images/BKC_02.jpg" style="width:100%; height:auto; margin:1.3em auto 1em auto">
 			<p style="font-size: 1em;text-align: center; margin-top: -1em; color: black">ZHUOQUAN CHEN<br>B.S.</p>
+
 			<p>I am a Data Scientist, graduated from Brooklyn College in Computer Science in 2020. Skilled in Python and machine learning, with a passion for providing effective data science solutions and application. Team-oriented, solution-driven and engaged. Given my multiple backgrounds, it allows me to translate my creativity and problem solving skills into clear and actionable insights for my team. </p>
 
 			<h5>GENERAL ASSEMBLY | REMOTE </h5>
@@ -106,12 +110,13 @@ body {
 			<h5>GRAPHIC DESIGN BACKGROUND </h5>
 			<p>I was a design director. In 2010-2014, I managed my design team and led my team to participate in the bidding of design projects and ensured successful execution of daily design work. Led successful design project bidding process totaling over $4 million with P&G (China), China Southern Power Grid, Sanofi (China), Pfizer (China), Real estate and Financial industries,etc. design projects bidding.</p>
 
-			<h5>CONTACT ME</h5>
-			<p>ZHUOQUAN1223@GMAIL.COM | 718-300-0078 | BROOKLYN, NEW YORK</p>
-
-			<a href="https://www.linkedin.com/in/zhuoquanchen/" target="_blank">
-				<img src="images/in-log.png" alt="in" style="width:2.5em; height:2.5em; display: block; margin:2.5em auto 1.8em auto"></a>
+			<h5>CONTACT</h5>
+			<p>ZHUOQUAN1223@GMAIL.COM | 718-300-0078 | BROOKLYN, NEW YORK <br> </p>
 		</div>
+	</div>
+
+	<div class="footer">
+  		<p></p>
 	</div>
 
 </body>
