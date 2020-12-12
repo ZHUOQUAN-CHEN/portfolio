@@ -6,22 +6,41 @@
 <style>
 
 body {
-	font: normal 100% quicksand,sans-serif;
+	font: normal 100% Courier New, sans-serif;
 	margin:0;
 }
 
-.content h1 {
-	margin-top: 4em;
+.content hr {
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 2em;
 	width: 70%;
 }
 
-.content h3 {
+.content ul {
+	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	width: 70%;
+	font-size: 1em;
 	line-height: 1.8;
+	margin-top: -1em;
+	margin-bottom: 3em;
+}
+
+.content h1 {
+	margin-top: 3em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	margin-bottom: 1em;
+}
+
+.content h2 {
+	margin-top: 1.5em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
 }
 
 .content p {
@@ -29,28 +48,83 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	width: 70%;
-	font-size: 0.9em;
+	font-size: 1em;
 	/*text-align: justify;*/
 	line-height: 1.8;
 	margin-top: -1em;
 	margin-bottom: 3em;
 }
 
+.content img {
+	display: block;
+	margin-top: -1em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	margin-bottom: 2em;
+}
+
+@media screen and (max-device-width: 25em) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+  .navbar a {
+    float: none;
+    width: auto;
+  }
+}
 
 </style>
 
 <body>
 	<div class='content'>
-		<h1>COVID-19 CASE COUNT ANALYSIS</h1>
-		<h3>The primary aim of this analysis is to highlight the key factors that contributed to confirmation of Covid-19 cases in the United States. The goal is to create a model that can be used to predict future Covid-19 cases and cases of a future disease of similar magnitude.
-		<br>Data: Open, Mask, Symptoms, Mobility and Policy, which are from Google BigQuery.</h3>
-		<p>1> Cleaned all datasets.
-		<br>2> Analyzed the relationships between features in each dataset. 
-		<br>3> Combined those features, which have significant correlation.
-		<br>4> Compared the mask usage status in the United States with New York State.
-		<br>5> Using Choropleth maps to display comprehensive information of each state of the United States and each county of New York.
-		<br>6> Built models for prediction in confirmed cases.
-		</p>
+		<h1>PROJECT DESCRIPTION</h1>
+		<ul>
+  			<li>Cleaned all datasets.</li>
+  			<li>Analyzed the relationships between features in each dataset.</li>
+  			<li>Combined those features, which have significant correlation.</li>
+  			<li>Compared the mask usage status in the United States with New York State.</li>
+  			<li>Using Choropleth maps to display comprehensive information of each state of the United States and each county of New York.</li>
+  			<li>Built models for prediction in confirmed cases.</li>
+		</ul>
+
+		<h2>PROBLEM STATEMENT</h2>
+		<hr />
+		<p>The primary aim of this analysis is to highlight the key factors that contributed to confirmation of Covid-19 cases in the United States of America. We will test a number of models including: Linear Regression, Lasso, Ridge, ElasticNet, Random Forest and Personal Component Regression and focus on the model that performs the best. The goal is to create a model that can be used to predict future Covid-19 cases and cases of a future disease of similar magnitude.</p>
+
+		<h2>DATA</h2>
+		<hr />
+		<p>The data that we are using for this project are several datasets containing information about Covid 19, they were exported from Google BigQuery. Originally we had 5 datasets: Mobility, Open, Policy, Mask, and Symptoms. Mobility, Policy, and Open were combined into clean_covid.csv (data dictionary below).</p>
+
+		<p>The mask.csv describes how often people people wore masks in different counties. The data set contains answers to a survey conducted by The New York Times. Survey participants were asked “How often do you wear a mask in public when you expect to be within six feet of another person?”.</p>
+
+		<p>The symptoms.csv contains aggregrated trends of health symptoms input into the google search engine. The symptoms dataset is separated by date and county. </p>
+		
+		<h2>EXPLORATORY DATA ANALYSIS</h2>
+		<hr />
+		<ul>
+  			<li>Searches for infection, common cold and fever occurred much more this year 2020 then last year.</li>
+  			<li>Many of the top correlated terms refer to behaviorial symptoms instead of more concrete symptoms. Terms like dysphoria, confusion, depression and anxiety.</li>
+		</ul>
+		<img src="images/covid_2.png"></a>
+		<img src="images/covid_4.png"></a>
+		<img src="images/covid_3.png"></a>
+
+		<h2>RESULTS</h2>
+		<hr />
+		<p>Models and Scores:</p>
+		<img src="images/covid_5.png"></a>
+		<img src="images/covid_6.png" style="width: 34%"></a>
+
+		<h2>CONCLUSION</h2>
+		<hr />
+		<p>In conclusion, we created a multiple regression models (Linear Regression, Lasso Regression, Ridge, Elastic Net, Principle Component Regression, Extra Tree). The best performance for all our data sets was through Random Forest Regression modeling.</p>
+
+		<p>The R2 score for Open Data testing data was around .989, therefore accounting for 98.9% of the variability in testing data. The Root Mean Square Error of the model was right at 5,649. Therefore, the model can accurately predict confirmed cases by state within 5,649 cases, important to note when looking at future predicted cases based off of this model.</p>
+
+		<p>For the symptoms dataset, we found that compared to last year, the top 5 google search symptoms were infection, common cold, fever, acne, and xeroderma. Behavioral symptoms were the most highly correlated with covid case count (ex. dysphoria, anxiety, depression). We were able to create a random forest model just on google symptom search date with a test score R2 of .969.</p>
+
+		<p>In the mask data, we could not find a strong correlation between mask usage and covid case count. All the models overfit the training data and produced poor testing scores.</p>
 
 </body>
 </html>

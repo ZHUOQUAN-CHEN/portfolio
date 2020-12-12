@@ -6,22 +6,41 @@
 <style>
 
 body {
-	font: normal 100% quicksand,sans-serif;
+	font: normal 100% Courier New, sans-serif;
 	margin:0;
 }
 
-.content h1 {
-	margin-top: 4em;
+.content hr {
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 2em;
 	width: 70%;
 }
 
-.content h3 {
+.content ul {
+	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	width: 70%;
+	font-size: 1em;
 	line-height: 1.8;
+	margin-top: -1em;
+	margin-bottom: 3em;
+}
+
+.content h1 {
+	margin-top: 3em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	margin-bottom: 1em;
+}
+
+.content h2 {
+	margin-top: 1.5em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
 }
 
 .content p {
@@ -29,7 +48,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	width: 70%;
-	font-size: 0.9em;
+	font-size: 1em;
 	/*text-align: justify;*/
 	line-height: 1.8;
 	margin-top: -1em;
@@ -41,13 +60,63 @@ body {
 
 <body>
 	<div class='content'>
-		<h1>STOCKS PREDICTION</h1>
-		<h3>Stocks prediction project contains analysis and price prediction. In the analysis part, I analyzed trends and returns of stocks. In the price prediction part, I used the time series model ARIMA and find the best p, d, q to fit the model for predicting the price movements.</h3>
-		<p>1> The 50-day and 200-day moving average are considered to be important trading signals. 
-		<br>2> Golden Cross signal & Death Cross signal.
-		<br>3> Data Stationarity Analysis: the Augmented Dickey-Fuller Test.
-		<br>4> ACF & PACF / AIC heatmap finding the best p, d, q.
-		<br>5> Forecasting stocks price.
+		<h1>PROJECT DESCRIPTION</h1>
+
+		<h2>BACKGROUND</h2>
+		<hr />
+		<p>Technology has become an integral part of finance. Many financial firms are now growing into technology companies instead of staying in the traditional aspect. The frequency of financial transactions generates large data volumes, which make financial firms paid more and more attention to technology over the years. Today, technology is one of the main pushers in finance.
+		</p>
+
+		<h2>PROBLEM STATEMENT</h2>
+		<hr />
+		<p>This is a project about stock price prediction. This project fully reflects how the difference between using technology and traditional methods for financial analysis. In this project, I am using apple stock data for the past 5 years, which contains market analysis and close price prediction. In the market analysis part, I am able to calculate the stock return in daily, weekly, monthly and even quarterly, and also using trading strategy. In the price prediction part, I used the time series model ARIMA and tried to find the best p, d, q to fit the model for predicting the price movements, and used mean squared error as evaluation function of this model.
+		</p>
+
+		<h2>DATA</h2>
+		<hr />
+		<p>AAPL and GOOG, 2015 - 2020, download from yfinance.
+		</p>
+
+		<h2>METHODOLOGY</h2>
+		<hr />
+		<ul>
+  			<li>Time series analysis.</li>
+  			<li>Time series processing.</li>
+  			<li>Forecasting.</li>
+		</ul>
+
+		<h2>EXPLORATORY DATA ANALYSIS</h2>
+		<hr />
+		<ul>
+  			<li>Historical close price by daily, weekly, monthly.</li>
+  			<li>The return rate of investment.</li>
+  			<li>Moving windows.</li>
+  			<li>Volatility.</li>
+  			<li>Trading Strategy.</li>
+		</ul>
+
+		<h2>MODELING</h2>
+		<hr />
+		<ul>
+  			<li>ARIMA: Difference d of Time Series / Finding appropriate p, q / Testing model with parameters p, d, q.</li>
+  			<li>SVM.</li>
+		</ul>
+
+		<h2>RESULTS</h2>
+		<hr />
+		<ul>
+  			<li>ARIMA RMSE: 0.7067031040119878.</li>
+  			<li>SVM ACCURACY: 0.9848634030591281.</li>
+		</ul>
+
+		<h2>CONCLUSION</h2>
+		<hr />
+		<p>The purpose of this analysis only for study instead of any financial advice. Even ARIMA model performs pretty well in time series, such as stock, a variety of calculations, analysis, and trading strategy seem reasonable. However, many other factors can impact stocks' price, such as national policies, corporation internal issues, etc. and this eventually can not be predictable and computable. What we can do is improving the trading strategies, algorithms, or models.
+		</p>
+
+		<h2>NEXT STEP</h2>
+		<hr />
+		<p>In the term of analysis, I will try to do more trading strategies for a further insight or analysis, such as inversion strategy, forecasting strategy and High-Frequency Trading (HFT) strategy. In the term of model and predition, I will try to use another technology, such as Long Short Term Memory, to see how they perform different, then find out a best solution.
 		</p>
 
 </body>

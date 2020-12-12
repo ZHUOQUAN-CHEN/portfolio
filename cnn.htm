@@ -6,22 +6,41 @@
 <style>
 
 body {
-	font: normal 100% quicksand,sans-serif;
+	font: normal 100% Courier New, sans-serif;
 	margin:0;
 }
 
-.content h1 {
-	margin-top: 4em;
+.content hr {
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 2em;
 	width: 70%;
 }
 
-.content h3 {
+.content ul {
+	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	width: 70%;
+	font-size: 1em;
 	line-height: 1.8;
+	margin-top: -1em;
+	margin-bottom: 3em;
+}
+
+.content h1 {
+	margin-top: 3em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	margin-bottom: 1em;
+}
+
+.content h2 {
+	margin-top: 1.5em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
 }
 
 .content p {
@@ -29,21 +48,48 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	width: 70%;
-	font-size: 0.9em;
+	font-size: 1em;
 	/*text-align: justify;*/
 	line-height: 1.8;
 	margin-top: -1em;
 	margin-bottom: 3em;
 }
 
+.content img {
+	display: block;
+	margin-top: -1em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	margin-bottom: 2em;
+}
+
+@media screen and (max-device-width: 25em) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+  .navbar a {
+    float: none;
+    width: auto;
+  }
+}
 
 </style>
 
 <body>
 	<div class='content'>
-		<h1>ALEXNET vs. RESNET18</h1>
-		<h3>AlexNet vs. ResNet18 is a Deep Learning project, which to compare the performance of AlexNet and ResNet18 models in fine tuning.<br>DATASET: hymenoptera_data, EPOCH: 15</h3>
-		<p>1> Phase 1: The outcome of resetting final fully connected layers.AlexNet model: training completed in 15m 49s, the best accuracy is 0.888889. ResNet model: training completed in 20m 60s, the best accuracy is 0.947712.<br>2> Phase 2: The outcome of freezing all the network except the final layers. AlexNet model: training completed in 10m 56s, the best accuracy is 0.947712. ResNet model: training completed in 9m 5s, the best accuracy is 0.954248. <br>3> Performance: AlexNet model, 26m 45s, 0.947712. ResNet model, 30m 5s, 0.954248.</p>
+		<h1>PROJECT DESCRIPTION</h1>
+		<p>AlexNet vs. ResNet18 is a Deep Learning project, which to compare the performance of AlexNet and ResNet18 models in fine tuning.<br>
+		DATASET: hymenoptera_data, EPOCH: 15.</p>
+		<ul>
+  			<li>Phase 1: The outcome of resetting final fully connected layers.AlexNet model: training completed in 15m 49s, the best accuracy is 0.888889. ResNet model: training completed in 20m 60s, the best accuracy is 0.947712.</li>
+  			<li>Phase 2: The outcome of freezing all the network except the final layers. AlexNet model: training completed in 10m 56s, the best accuracy is 0.947712. ResNet model: training completed in 9m 5s, the best accuracy is 0.954248.</li>
+  			<li>Phase 2: The outcome of freezing all the network except the final layers. AlexNet model: training completed in 10m 56s, the best accuracy is 0.947712. ResNet model: training completed in 9m 5s, the best accuracy is 0.954248.</li>
+		</ul>
+
+		<h2>CONCLUSION</h2>
+		<hr />
+		<p>From resetting final fully connected layers to freezing all the network except the final layers, the accuracy does improve. In this case, the improvement rate of AlexNet model is higher than ResNet model, and ResNet uses more run time than AlexNet, which is over expected. Because of the parameters of AlexNet is more than Resnet, so AlexNet’s calculation should be more expensive than ResNet. Therefore, I guess that the dept of layer determines the run time. Finally, the test shows that the accuracy of ResNet will be higher a little than AlexNet.</p>
 
 </body>
 </html>
