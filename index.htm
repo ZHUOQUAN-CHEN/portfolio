@@ -27,21 +27,26 @@ body {
 
 .column-right {float:right; width:22%; padding: 0.5%}
 
-.icon img {
-  display: block;
-  margin-top: 20em;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: -3em;
-  width: 5%;
+.topright{
+  position: absolute;
+  top: 1.7em;
+  right: 1em;
+  width:3em; 
+  height:auto;
+}
+
+.topright img {
+  width:2em; 
+  height:auto;
+  margin-bottom: 1.2em;
 }
 
 .column-mid img {
   display: block;
-  margin-top: 4em;
+  margin-top: -2em;
   margin-left: auto;
   margin-right: auto;
-  width: 10%;
+  width: 12%;
 }
 
 .column-mid h1 {
@@ -56,23 +61,6 @@ body {
   text-align:center;
   margin-top: -0.5em;
   color: rgba(0, 0, 0, 0.75);
-}
-
-.resume img{
-  display: block;
-  margin-top: 1em;
-  margin-left: auto;
-  margin-right: auto;
-  width: 6%;
-}
-
-.resume:hover img{color: white ;filter:alpha(Opacity=70);-moz-opacity:0.7;opacity: 0.7}
-
-/* Clear floats after the columns */
-.resume:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 .cover {
@@ -139,22 +127,21 @@ body {
   <div class="column-left"></div>
 
   <div class="column-mid">
-    <img src="images/ZHUOQUANC.png" style="width:18%; height:auto">
+    <img src="images/ZHUOQUANC.png" style="width:23%; height:auto">
     <h1>Hello, I'm Zhuoquan Chen</h1>
     <p>Data Scientist / Designer</p>
+  </div>
 
-    <div class="resume">
-    <a href="images/resume.pdf" target="_blank" download>
-    <img src="images/down_resume.png" alt="in"></a>
-    </div>
-
-    <div class="icon">
+  <div class="column-right"></div>
+    <div class="topright">
       <a href="https://www.linkedin.com/in/zhuoquanchen/" target="_blank">
-      <img src="images/index_linkedin.png" alt="in" style="width:5%; height:auto; margin-top: 12em"></a>
+      <img src="images/index_linkedin.png" alt="in"></a>
 
       <a href="https://git.generalassemb.ly/" target="_blank">
-      <img src="images/index_github.png" alt="in" style="width:5%; height:auto"></a>
-    </div>
+      <img src="images/index_github.png" alt="in"></a>
+
+      <a href="images/resume.pdf" target="_blank" download>
+      <img src="images/index_resume.png" alt="in"></a>
   </div>
 </div>
 
