@@ -24,80 +24,26 @@ body {
   margin:0;
 }
 
-.icon img {
-  display: block;
-  margin-top: 9.5em;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: -8.5em;
-  width: 2.5%;
+.column-left {float:left; width:22%; padding: 0.5%}
+
+.column-mid {float:center; width:55%; margin: 4em auto auto auto}
+
+.column-right {float:right; width:22%; padding: 0.5%}
+
+.topright{
+  position: absolute;
+  top: 1.7em;
+  right: 1em;
+  width:3em; 
+  height:auto;
 }
 
-.middle img {
-  display: block;
-  margin-top: 4em;
-  margin-left: auto;
-  margin-right: auto;
-  width: 10%;
-}
 
-.middle h1 {
-  display: block;
-  text-align:center;
-  color: rgba(0, 0, 0, 0.75);
-  font-size: 1.7em;
+.topright img {
+  width:2em; 
+  height:auto;
+  margin-bottom: 1.2em;
 }
-
-.middle p {
-  display: block;
-  text-align:center;
-  margin-top: -0.5em;
-  color: rgba(0, 0, 0, 0.75);
-}
-
-.resume img{
-  display: block;
-  margin-top: 1em;
-  margin-left: auto;
-  margin-right: auto;
-  width: 4%;
-}
-
-.resume:hover img{color: white ;filter:alpha(Opacity=70);-moz-opacity:0.7;opacity: 0.7}
-
-/* Clear floats after the columns */
-.resume:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.cover {
-  position:fixed;
-  top: 0;
-  left: 0;
-  width:100%;
-  height:100%;
-  min-width: 1000px;
-  z-index:-10;
-  zoom: 1;
-  background-color: #fff;
-  background: url(imgs/cover_4.jpg) no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-  background-position: center 0;
-}
-/*
-.footer {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 2em;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-}*/
 
 .navbar {
   list-style-type: none;
@@ -113,16 +59,16 @@ body {
 .navbar a {
   float: left;
   display: block;
-  width: 8em;
+  width: 9em;
   padding: 2em 1em 1.5em 0;
-  color: black;
+  color: white;
   text-decoration: none;
   font-size: 0.75em;
   text-align: center;
   /* width: 9%; /* Four links of equal widths */
 }
 
-.navbar a:hover {color: rgba(255,255,255,0.8)}
+.navbar a:hover {color: rgba(255,255,255,0.4)}
 
 @media screen and (max-device-width: 25em) {
   .navbar a {
@@ -134,40 +80,34 @@ body {
 </style>
 
 <body>
-  <div class="cover">
-    <nav class="navbar-inverse">
-      <div class="container-fluid">
+  <nav class="navbar-inverse">
+    <div class="container-fluid">
         <ul class="navbar">
           <li><a class="active" href="index.htm">HOME</a></li>
-          <li><a href="about.htm">ABOUT</a></li>
-          <li><a href="activity.htm">ACTIVITY</a></li>
-          <li><a href="projects.htm">PROJECT</a></li>
+      <li><a href="about.htm">ABOUT</a></li>
+      <li><a href="activity.htm">ACTIVITY</a></li>
+      <li><a href="projects.htm">PROJECT</a></li>
         </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-  <div class="middle">
-      <img src="imgs/ZHUOQUANC.png" alt="in"></a>
-      <h1>Hello, I'm Zhuoquan Chen</h1>
-      <p>Data Scientist / Designer</p>
+  <div class="column-left"></div>
+
+  <div class="column-mid">
+    <img id="background" src="images/agifcolossalsphere.gif" style="width:55%; height:auto">
   </div>
 
-  <div class="resume">
-      <a href="imgs/resume.pdf" target="_blank" download>
-      <img src="imgs/down_resume.png" alt="in"></a>
-  </div>
+  <div class="column-right"></div>
+    <div class="topright">
+      <a href="images/resume.pdf" target="_blank" download>
+      <img src="images/button_1.png" alt="in"></a>
 
-  <div class="icon">
       <a href="https://www.linkedin.com/in/zhuoquanchen/" target="_blank">
-      <img src="imgs/index_linkedin.png" alt="in"></a>
+      <img src="images/in-log.png" alt="in"></a>
 
       <a href="https://git.generalassemb.ly/" target="_blank">
-      <img src="imgs/index_github.png" alt="in"></a>
-  </div>
-
-  <div class="footer">
-    <a href="https://www.linkedin.com/in/zhuoquanchen/" class="linkedin"><span class="fa fa-linkedin"></span></a>
-    <a href="https://git.generalassemb.ly/" class="github"><span class="fa fa-github"></span></a>
+      <img src="images/git_1.png" alt="in"></a>
   </div>
 
 </body>
