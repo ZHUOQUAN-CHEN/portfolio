@@ -3077,7 +3077,7 @@
 
 	#intro {
 		color: #ffffff;
-		padding: 8rem 4rem 10rem 4rem ;
+		padding: 8rem 4rem 22rem 4rem ;
 		-moz-align-items: center;
 		-webkit-align-items: center;
 		-ms-align-items: center;
@@ -3178,7 +3178,7 @@
 				}
 
 		#intro h1 {
-			font-size: 5rem;
+			font-size: 4rem;
 			line-height: 1;
 		}
 
@@ -3557,7 +3557,7 @@
 /* Main */
 
 	#main {
-		background-color: #ffffff;
+		background-color: rgba(255, 255, 255, 1);
 		position: relative;
 		margin: 0 auto;
 		width: calc(100% - 4rem);
@@ -3589,7 +3589,7 @@
 
 			#main > .post header.major > h1, #main > .post header.major h2 {
 				font-size: 4rem;
-				line-height: 1.1;
+				line-height: 1;
 				margin: 0 0 2rem 0;
 			}
 
@@ -3663,11 +3663,12 @@
 			}
 
 			#main > .posts > article {
+				/*
 				border-color: rgba(0, 0, 0, 0.2);
 				border-left-width: 1px;
 				border-style: solid;
 				border-top-width: 1px;
-				text-align: center;
+				text-align: center; */
 			}
 
 				#main > .posts > article > :last-child {
