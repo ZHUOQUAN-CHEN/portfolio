@@ -1669,7 +1669,8 @@
 	body, input, select, textarea {
 		font-family: "Merriweather", Georgia, serif;
 		font-weight: 300;
-		font-size: 1rem;
+		font-size: 0.9rem;
+		letter-spacing: 0.03em;
 		line-height: 2.375;
 	}
 
@@ -1695,7 +1696,7 @@
 	}
 
 	p {
-		text-align: justify;
+		text-align: left;
 		margin: 0 0 2rem 0;
 	}
 
@@ -1703,7 +1704,7 @@
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-weight: 900;
 		line-height: 1.5;
-		letter-spacing: 0.075em;
+		letter-spacing: 0em;
 		text-transform: uppercase;
 		margin: 0 0 1rem 0;
 	}
@@ -1886,7 +1887,7 @@
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 0.8rem;
 		font-weight: 900;
-		letter-spacing: 0.075em;
+		letter-spacing: 0em;
 		height: 3rem;
 		line-height: 3rem;
 		padding: 0 2rem;
@@ -2147,7 +2148,7 @@
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-weight: 900;
 		line-height: 1.5;
-		letter-spacing: 0.075em;
+		letter-spacing: 0em;
 		font-size: 0.8rem;
 		text-transform: uppercase;
 		margin: 0 0 0.75rem 0;
@@ -2555,7 +2556,7 @@
 					display: inline-block;
 					text-align: center;
 					border-radius: 100%;
-					font-size: 2rem;
+					font-size: 1.7rem;
 				}
 
 			ul.icons.alt li .icon:before {
@@ -2688,7 +2689,7 @@
 	}
 
 	ul.icons li a.icon:hover:before {
-		color: #18bfef;
+		color: black;/*#18bfef*/
 	}
 
 	ul.icons.alt li .icon:before {
@@ -2696,7 +2697,7 @@
 	}
 
 	ul.icons.alt li a.icon:hover:before {
-		box-shadow: inset 0 0 0 2px #18bfef;
+		box-shadow: inset 0 0 0 2px black;/*#18bfef*/
 	}
 
 /* Section/Article */
@@ -2987,13 +2988,13 @@
 	}
 
 		.pagination a:hover {
-			color: #18bfef !important;
+			color: black/*#18bfef*/ !important;
 			border-color: #18bfef;
 			z-index: 1;
 		}
 
 			.pagination a:hover + a, .pagination a:hover + span {
-				border-left-color: #18bfef;
+				border-left-color: black;/*#18bfef*/
 			}
 
 		.pagination a.active {
@@ -3023,7 +3024,7 @@
 			width: 100%;
 			height: 100%;
 			background-color: #212931;
-			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
+			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../images/bg.jpg");
 			background-size: auto,								auto,														100% auto;
 			background-position: center,								center,														top center;
 			background-repeat: repeat,								no-repeat,													no-repeat;
@@ -3116,7 +3117,7 @@
 
 			#intro a:hover {
 				border-bottom-color: transparent;
-				color: #18bfef !important;
+				color: black/*#18bfef*/!important;
 			}
 
 		#intro strong, #intro b {
@@ -3156,7 +3157,7 @@
 			#intro button:hover,
 			#intro .button:hover {
 				box-shadow: inset 0 0 0 2px #18bfef;
-				color: #18bfef !important;
+				color: black/*#18bfef*/ !important;
 			}
 
 			#intro input[type="submit"].special,
@@ -3174,7 +3175,7 @@
 				#intro input[type="button"].special:hover,
 				#intro button.special:hover,
 				#intro .button.special:hover {
-					background-color: #18bfef;
+					background-color: black;/*#18bfef*/
 				}
 
 		#intro h1 {
@@ -3331,7 +3332,7 @@
 
 			#header a:hover {
 				border-bottom-color: transparent;
-				color: #18bfef !important;
+				color: black/*#18bfef*/ !important;
 			}
 
 		#header strong, #header b {
@@ -3365,12 +3366,12 @@
 			-ms-pointer-events: auto;
 			pointer-events: auto;
 			border-style: solid;
-			border-color: #ffffff;
+			border-color: rgba(255, 255, 255, 1);
 			border-width: 5px !important;
 			font-family: "Source Sans Pro", Helvetica, sans-serif;
 			font-size: 2.25rem;
 			font-weight: 900;
-			letter-spacing: 0.075em;
+			letter-spacing: 0em;
 			line-height: 1;
 			padding: 1rem 1.75rem;
 			text-transform: uppercase;
@@ -3378,8 +3379,9 @@
 		}
 
 			#header .logo:hover {
-				border-color: #18bfef !important;
-				color: #18bfef !important;
+				border-color: black/*#18bfef*/ !important;
+				color: black/*#18bfef*/ !important;
+				opacity:0.7;
 			}
 
 		@media screen and (max-width: 980px) {
@@ -3416,7 +3418,7 @@
 		-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
 		-ms-transition: -ms-transform 1s ease, opacity 1s ease;
 		transition: transform 1s ease, opacity 1s ease;
-		background: rgba(255, 255, 255, 0.175);
+		background: rgba(255, 255, 255, 0.25);
 		height: 4rem;
 		line-height: 4rem;
 		margin: -4rem auto 0 auto;
@@ -3433,7 +3435,7 @@
 		}
 
 		#nav ul.icons li a.icon:hover:before {
-			color: #18bfef;
+			color: black;/*#18bfef*/
 		}
 
 		#nav ul.icons.alt li .icon:before {
@@ -3441,7 +3443,7 @@
 		}
 
 		#nav ul.icons.alt li a.icon:hover:before {
-			box-shadow: inset 0 0 0 2px #18bfef;
+			box-shadow: inset 0 0 0 2px black;/*#18bfef*/
 		}
 
 		#nav input, #nav select, #nav textarea {
@@ -3455,7 +3457,7 @@
 
 			#nav a:hover {
 				border-bottom-color: transparent;
-				color: #18bfef !important;
+				color: black/*#18bfef*/ !important;
 			}
 
 		#nav strong, #nav b {
@@ -3519,7 +3521,7 @@
 
 					#nav ul.links li a:hover {
 						color: inherit !important;
-						background-color: rgba(255, 255, 255, 0.3);
+						background-color: rgba(255, 255, 255, 0.35);
 					}
 
 				#nav ul.links li.active {
@@ -3531,7 +3533,7 @@
 					}
 
 						#nav ul.links li.active a:hover {
-							color: #18bfef !important;
+							color: black/*#18bfef*/ !important;
 						}
 
 		#nav ul.icons {
@@ -3557,7 +3559,7 @@
 /* Main */
 
 	#main {
-		background-color: rgba(255, 255, 255, 1);
+		background-color: rgba(255, 255, 255, 0.9);
 		position: relative;
 		margin: 0 auto;
 		width: calc(100% - 4rem);
