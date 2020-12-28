@@ -3127,6 +3127,7 @@
 
 		#intro h1, #intro h2, #intro h3, #intro h4, #intro h5, #intro h6 {
 			color: #ffffff;
+			opacity: 0.9
 		}
 
 		#intro blockquote {
