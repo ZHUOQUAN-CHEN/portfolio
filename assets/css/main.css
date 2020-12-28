@@ -3527,7 +3527,7 @@
 					}
 
 				#nav ul.links li.active {
-					background-color: rgba(255, 255, 255, 0.8);
+					background-color: rgba(255, 255, 255, 0.9);
 				}
 
 					#nav ul.links li.active a {
@@ -3561,7 +3561,7 @@
 /* Main */
 
 	#main {
-		background-color: rgba(255, 255, 255, 0.85);
+		background-color: rgba(255, 255, 255, 0.9);
 		position: relative;
 		margin: 0 auto;
 		width: calc(100% - 4rem);
