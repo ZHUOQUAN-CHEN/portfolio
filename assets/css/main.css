@@ -3070,7 +3070,7 @@
 
 			#wrapper > .bg {
 				background-size: auto, auto, auto 170%;
-				margin: 4rem 0rem 25rem 0rem ;
+				margin: 4rem 0rem 20rem 0rem ;
 			}
 
 		}
@@ -3268,7 +3268,7 @@
 		@media screen and (max-width: 736px) {
 
 			#intro {
-				padding: 9rem 2rem 20rem 2rem ;
+				padding: 9rem 2rem 19rem 2rem ;
 				min-height: 80vh;
 			}
 
