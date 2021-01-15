@@ -3069,8 +3069,8 @@
 		@media screen and (orientation: portrait) {
 
 			#wrapper > .bg {
-				background-size: auto, auto, auto 230%;
-				margin: -8rem 0rem -16rem 0rem ;
+				background-size: auto, auto, auto 220%;
+				margin: -5rem 0rem -16rem 0rem ;
 			}
 
 		}
