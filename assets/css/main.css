@@ -1618,7 +1618,7 @@
 	}
 
 	body {
-		background-color: rgb(200 0 210); /**************************************************/
+		background-color: rgb(16 16 22); /**************************************************/
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
