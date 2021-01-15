@@ -1618,7 +1618,7 @@
 	}
 
 	body {
-		background-color: #1e252d;
+		background-color: rgb(200 0 210); /**************************************************/
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -1808,25 +1808,25 @@
 	}
 
 	input, select, textarea {
-		color: #212931;
+		color: rgb(17 17 22);
 	}
 
 	a {
-		color: #212931;
+		color: rgb(17 17 22);
 		border-bottom-color: rgba(33, 41, 49, 0.5);
 	}
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #212931/*#18bfef*/ !important;
+			color: rgb(17 17 22)/*#18bfef*/ !important;
 		}
 
 	strong, b {
-		color: #212931;
+		color: rgb(17 17 22);
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #212931;
+		color: rgb(17 17 22);
 	}
 
 	blockquote {
@@ -2017,8 +2017,8 @@
 	button,
 	.button {
 		background-color: transparent;
-		box-shadow: inset 0 0 0 1px #212931;
-		color: #212931 !important;
+		box-shadow: inset 0 0 0 1px rgb(17 17 22);
+		color: rgb(17 17 22) !important;
 	}
 
 		input[type="submit"]:hover,
@@ -2026,8 +2026,8 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			box-shadow: inset 0 0 0 1px #18bfef;
-			color: #18bfef !important;
+			box-shadow: inset 0 0 0 1px rgb(138 138 138)/*#18bfef*/;
+			color: rgb(138 138 138) !important;
 		}
 
 		input[type="submit"].special,
@@ -2035,7 +2035,7 @@
 		input[type="button"].special,
 		button.special,
 		.button.special {
-			background-color: #212931;
+			background-color: rgb(17 17 22);
 			box-shadow: none;
 			color: #ffffff !important;
 		}
@@ -2045,7 +2045,7 @@
 			input[type="button"].special:hover,
 			button.special:hover,
 			.button.special:hover {
-				background-color: #18bfef;
+				background-color: rgb(138 138 138);
 			}
 
 /* Form */
@@ -2336,7 +2336,7 @@
 
 	select option {
 		background-color: #ffffff;
-		color: #212931;
+		color: rgb(17 17 22);
 	}
 
 	.select-wrapper:before {
@@ -2345,7 +2345,7 @@
 
 	input[type="checkbox"] + label,
 	input[type="radio"] + label {
-		color: #212931;
+		color: rgb(17 17 22);
 	}
 
 		input[type="checkbox"] + label:before,
@@ -2355,8 +2355,8 @@
 
 	input[type="checkbox"]:checked + label:before,
 	input[type="radio"]:checked + label:before {
-		background-color: #212931;
-		border-color: #212931;
+		background-color: rgb(17 17 22);
+		border-color: rgb(17 17 22);
 		color: #ffffff;
 	}
 
@@ -2556,7 +2556,7 @@
 					display: inline-block;
 					text-align: center;
 					border-radius: 100%;
-					font-size: 1.7rem;
+					font-size: 1.5rem;
 				}
 
 			ul.icons.alt li .icon:before {
@@ -2883,7 +2883,7 @@
 		}
 
 	table th {
-		color: #212931;
+		color: rgb(17 17 22);
 	}
 
 	table thead {
@@ -3023,8 +3023,8 @@
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-color: #212931;
-			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url("../../images/bg.jpg");
+			background-color: rgb(17 17 22);
+			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url("../../images/bg_2.jpg");
 			background-size: auto,								auto,														100% auto;
 			background-position: center,								center,														top center;
 			background-repeat: repeat,								no-repeat,													no-repeat;
@@ -3051,7 +3051,7 @@
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
-			background: #1e252d;
+			background: rgb(17, 17, 22);
 			content: '';
 			display: block;
 			height: 100%;
@@ -3069,7 +3069,8 @@
 		@media screen and (orientation: portrait) {
 
 			#wrapper > .bg {
-				background-size: auto,								auto,														auto 175%;
+				background-size: auto, auto, auto 190%;
+				margin: 4rem 0rem 30rem 0rem ;
 			}
 
 		}
@@ -3078,7 +3079,7 @@
 
 	#intro {
 		color: #ffffff;
-		padding: 8rem 4rem 23rem 4rem ;
+		padding: 6rem 4rem 27.5rem 4rem ;
 		-moz-align-items: center;
 		-webkit-align-items: center;
 		-ms-align-items: center;
@@ -3267,7 +3268,7 @@
 		@media screen and (max-width: 736px) {
 
 			#intro {
-				padding: 5rem 2rem 13rem 2rem ;
+				padding: 4rem 2rem 20rem 2rem ;
 				min-height: 80vh;
 			}
 
@@ -3338,7 +3339,7 @@
 
 			#header a:hover {
 				border-bottom-color: transparent;
-				color: #212931/*#18bfef*/ !important;
+				color: rgb(17 17 22)/*#18bfef*/ !important;
 			}
 
 		#header strong, #header b {
@@ -3424,7 +3425,7 @@
 		-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
 		-ms-transition: -ms-transform 1s ease, opacity 1s ease;
 		transition: transform 1s ease, opacity 1s ease;
-		background: rgba(255, 255, 255, 0.25);
+		background: rgba(255, 255, 255, 0.1);
 		height: 4rem;
 		line-height: 4rem;
 		margin: -4rem auto 0 auto;
@@ -3441,15 +3442,15 @@
 		}
 
 		#nav ul.icons li a.icon:hover:before {
-			color: #212931;/*#18bfef*/
+			color: rgb(245, 0, 255);/*#18bfef*/
 		}
 
 		#nav ul.icons.alt li .icon:before {
-			box-shadow: inset 0 0 0 1px #212931;
+			box-shadow: inset 0 0 0 1px rgb(17 17 22);
 		}
 
 		#nav ul.icons.alt li a.icon:hover:before {
-			box-shadow: inset 0 0 0 1px #212931;/*#18bfef*/
+			box-shadow: inset 0 0 0 1px rgb(17 17 22);/*#18bfef*/
 		}
 
 		#nav input, #nav select, #nav textarea {
@@ -3463,7 +3464,7 @@
 
 			#nav a:hover {
 				border-bottom-color: transparent;
-				color: #212931/*#18bfef*/ !important;
+				color: rgb(17 17 22)/*#18bfef*/ !important;
 			}
 
 		#nav strong, #nav b {
@@ -3527,7 +3528,7 @@
 
 					#nav ul.links li a:hover {
 						color: inherit !important;
-						background-color: rgba(255, 255, 255, 0.35);
+						background-color: rgba(255, 255, 255, 0.2);
 					}
 
 				#nav ul.links li.active {
@@ -3539,7 +3540,7 @@
 					}
 
 						#nav ul.links li.active a:hover {
-							color: #212931/*#18bfef*/ !important;
+							color: rgb(17 17 22)/*#18bfef*/ !important;
 						}
 
 		#nav ul.icons {
@@ -4328,7 +4329,7 @@
 		#navPanelToggle.alt {
 			background-color: rgba(255, 255, 255, 0.875);
 			box-shadow: 0 0.125rem 0.75rem 0 rgba(30, 37, 45, 0.25);
-			color: #212931;
+			color: rgb(17 17 22);
 		}
 
 			#navPanelToggle.alt:hover {
@@ -4365,7 +4366,7 @@
 		-webkit-overflow-scrolling: touch;
 		background: #ffffff;
 		box-shadow: none;
-		color: #212931;
+		color: rgb(17 17 22);
 		height: 100%;
 		max-width: 80%;
 		overflow-y: auto;
