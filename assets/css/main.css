@@ -2556,7 +2556,7 @@
 					display: inline-block;
 					text-align: center;
 					border-radius: 100%;
-					font-size: 1.5rem;
+					font-size: 1.4rem;
 				}
 
 			ul.icons.alt li .icon:before {
@@ -3526,7 +3526,7 @@
 					-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 					transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 					display: block;
-					font-size: 1rem;
+					font-size: 0.85rem;
 					outline: none;
 					padding: 0 2rem;
 				}
