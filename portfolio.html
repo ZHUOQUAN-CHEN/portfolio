@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<title>projects</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+
+body {
+	font: normal 100% Courier New, sans-serif;
+	margin:0;
+}
+
+.content hr {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 2em;
+	width: 70%;
+}
+
+.content ul {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	font-size: 1em;
+	line-height: 1.8;
+	margin-top: -1em;
+	margin-bottom: 3em;
+}
+
+.content h1 {
+	margin-top: 3em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	margin-bottom: 1em;
+}
+
+.content h2 {
+	margin-top: 1.5em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
+
+.content p {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	font-size: 1em;
+	/*text-align: justify;*/
+	line-height: 1.8;
+	margin-top: -1em;
+	margin-bottom: 3em;
+}
+
+
+</style>
+
+<body>
+	<div class='content'>
+		<h1>PROJECT DESCRIPTION</h1>
+		<h2><h2>PROJECT NAME: Stocks Portfolio Analysis</h2></h2>
+		<p>Portfolio return calculation such as price-weighted portfolio, equal-weighted portfolio, and value-weighted portfolio. Explored the optimal portfolio of stocks, used Markov Chain Monte Carlo (MCMC) Simulations to find out a minimum investment risk portfolio, and used Sharpe Ratio to select the optimal portfolio.
+		</p>
+
+		<h2>PROBLEM STATEMENT</h2>
+		<hr />
+		<p>Financial market is variable and full of uncertain factors, which investors always wish to find a right approach either decreasing risk or increasing return. However, the core problem of optimal investment is that how investors can reasonably allocate their existing investable assets to impletment the best return under a certain risk. This is a portfolio optimization that impletment a balance between return rate and risk rate. In this case I want to combine some stocks as a long-term investment, and I need to find a balance point between return and risk, which achieve a maxmum return and a minimum risk.
+		</p>
+
+		<h2>DATA</h2>
+		<hr />
+		<p>Data is from Yahoo finance (stocks symbols: AAPL, AMZN, FB, GOOGL, TSLA)
+		</p>
+
+		<h2>METHODOLOGY</h2>
+		<hr />
+		<ul>
+  			<li>Stocks price-weighted portfolio<br>
+  				The weight bases on the percentage of the price of a stock in the total price of five stocks.
+  			</li>
+  			<li>Stocks equal-weighted Portfolio<br>
+  				The weight for each stock is equal.
+  			</li>
+  			<li>Stocks value-weighted Portfolio<br>
+  				The weight bases on market value of a stock.
+  			</li>
+  			<li>Optimal Portfolio of Stocks<br>
+  				- Markov Chain Monte Carlo (MCMC) Simulations<br>
+  				- Minimum risk portfolio<br>
+  				- Maxmum return portfolio<br>
+  				- Optimize portfolio (Max Sharpe Ratio Portfolio)<br>
+  				- Find a maxmum sharpe ratio portfolio
+  			</li>
+		</ul>
+
+		<h2>EXPLORATORY DATA ANALYSIS</h2>
+		<hr />
+		<ul>
+  			<li>Calculated stocks daily return and year return</li>
+  			<li>Calculated stocks daily risk and year risk</li>
+  			<li>Stocks correlation analysis<br>
+  				- Correlation Matrix of Portfolio<br>
+  				- Covariance Matrix of Portfolio<br>
+  				- Standard Deviation / Mean of Portfolio
+  			</li>
+		</ul>
+
+		<h2>Data Preprocessing</h2>
+		<hr />
+		<ul>
+  			<li>Data normalization</li>
+		</ul>
+
+		<h2>CONCLUSION</h2>
+		<hr />
+		<p>In 10000 weights combination of simulations by MCMC, I find out the best weights of the optimal portfolio is that:<br>
+			AAPL: 0.3638<br>
+			AMZN: 0.3377<br>
+			FB: 0.0309<br>
+			GOOGL: 0.0063<br>
+			TSLA: 0.2613
+		</p>
+
+</body>
+</html>
