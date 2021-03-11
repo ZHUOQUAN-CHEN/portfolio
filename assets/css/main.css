@@ -2556,7 +2556,7 @@
 					display: inline-block;
 					text-align: center;
 					border-radius: 100%;
-					font-size: 1.4rem;
+					font-size: 1.2rem; /*those three small icons size*/
 				}
 
 			ul.icons.alt li .icon:before {
@@ -3447,7 +3447,7 @@
 		}
 
 		#nav ul.icons li a.icon:hover:before {
-			color: rgb(245, 0, 255);/*#18bfef*/
+			color: rgb(0, 205, 230);/*#18bfef ---- three small icons color*/
 		}
 
 		#nav ul.icons.alt li .icon:before {
